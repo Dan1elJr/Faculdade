@@ -6,19 +6,19 @@
 		setlocale(LC_ALL,"ptb");
 		int i,i2,tentativas=0,acertos=0,vetor[10],jogador1=0,jogador2=0,validador=0;
 		
-		cout<<"***Vamos jogar um jogo simples. O jogo se chama, acerte o número***.\n";
-		cout<<"***Neste jogo, o primeiro jogador informa 10 números, e o segundo jogador terá três tentativas para acertar os números***.\n\n";
-		cout<<"jogador 1 , informe os 10 números.\n";
+		cout<<"***Vamos jogar um jogo simples. O jogo se chama, acerte o nÃºmero***.\n";
+		cout<<"***Neste jogo, o primeiro jogador informa 10 nÃºmeros, e o segundo jogador terÃ¡ trÃªs tentativas para acertar os nÃºmeros***.\n\n";
+		cout<<"jogador 1 , informe os 10 nÃºmeros.\n";
 		for(i=0;i<10;i++){
 			cin>>jogador1;
 			vetor[i]=jogador1;
 			
 			
 		}
-			cout<<"Agora é a sua vez jogador 2. Tente acertar ,em três tentativas , os números informados pelo jogador 1";
+			cout<<"Agora Ã© a sua vez jogador 2. Tente acertar ,em trÃªs tentativas , os nÃºmeros informados pelo jogador 1";
 			for(i=0;i<3;i++){
 				cout<<"\n";
-				cout<<"Informe os números\n";
+				cout<<"Informe os nÃºmeros\n";
 				cin>>jogador2;
 				tentativas++;
 				for(i2=0;i2<10;i2++){
@@ -26,12 +26,12 @@
 					if(jogador2==vetor[i2]){
 						acertos++;
 						validador++;
-						cout<<"Parabéns, você acertou! Este número está na posição "<<i2<<" do vetor! "<<"Você usou "<<tentativas<<" tentativa(s)\n\n";
+						cout<<"ParabÃ©ns, vocÃª acertou! Este nÃºmero estÃ¡ na posiÃ§Ã£o "<<i2<<" do vetor! "<<"VocÃª usou "<<tentativas<<" tentativa(s)\n\n";
 						
 					
 					}
 						else if((validador!=1)&&(i2==9)){
-						cout<<"Que pena! Você errou!\n\n";
+						cout<<"Que pena! VocÃª errou!\n\n";
 						}
 					
 					
@@ -41,17 +41,17 @@
 						cout<<"Restam "<<3-tentativas<<" Tentativa(s)\n\n";
 					}
 						else{
-						cout<<"Não há mais tentativas\n\n";
+						cout<<"NÃ£o hÃ¡ mais tentativas\n\n";
 						}
 			
 					
-				}
+			}
 					if(acertos==0){
 						cout<<"\n";
-						cout<<"Você não acertou nenhuma das  tentativas\n";
+						cout<<"VocÃª nÃ£o acertou nenhuma das  tentativas\n";
 					}
 						else{
-						cout<<"Você obteve "<<acertos<<" acertos";
+						cout<<"VocÃª obteve "<<acertos<<" acertos";
 						}
 				
 		}
