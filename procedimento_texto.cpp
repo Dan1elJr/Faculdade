@@ -4,7 +4,7 @@
 
 	int texto(){
 		setlocale(LC_ALL,"ptb");
-		cout<<"Olá mundo";
+		cout<<"OlÃ¡ mundo";
 		
 	}
 	
